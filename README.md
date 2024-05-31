@@ -1,4 +1,4 @@
-# flusk_app
+# flask_app
 
 A new Flutter project.
 
