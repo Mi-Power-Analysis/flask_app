@@ -1,12 +1,13 @@
 import 'dart:convert';
 
-import 'package:flusk_app/AnalysisResponseModel.dart';
+import 'package:flusk_app/model/AnalysisResponseModel.dart';
 import 'package:get/get.dart';
 import 'package:http/http.dart' as http;
 
 class AnalysisController extends GetxController{
   var responseModel = AnalysisResponseModel().obs;
   var selectedAnalysis = Analysis().obs;
+  var selectedResults = Results().obs;
 
   Future<void> fetchData() async {
     await Future.delayed(Duration(seconds: 2));

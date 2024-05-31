@@ -1,4 +1,4 @@
-import 'package:flusk_app/app_routes.dart';
+import 'package:flusk_app/routes/app_routes.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

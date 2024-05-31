@@ -1,5 +1,6 @@
-import 'package:flusk_app/analysisDetail.dart';
-import 'package:flusk_app/home.dart';
+import 'package:flusk_app/pages/analysisDetail.dart';
+import 'package:flusk_app/pages/home.dart';
+import 'package:flusk_app/pages/resultsDetail.dart';
 import 'package:get/get.dart';
 
 appRoutes() => [
@@ -12,6 +13,12 @@ appRoutes() => [
   GetPage(
     name: '/detail',
     page: () => AnalysisDetail(),
+    middlewares: [RouteMiddleware()],
+    transitionDuration: Duration(milliseconds: 500),
+  ),
+  GetPage(
+    name: '/result',
+    page: () => ResultsDetailPage(),
     middlewares: [RouteMiddleware()],
     transitionDuration: Duration(milliseconds: 500),
   ),
