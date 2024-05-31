@@ -8,6 +8,7 @@ import 'dart:ui';
     Color(0xff8C6A5D),
     Color(0xff4F6F52),
   ];
+
 List<Color> analysisDetailColor = [
   Color(0xff53A0B6),
   Color(0xff97B9FF),
